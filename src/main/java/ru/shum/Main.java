@@ -1,6 +1,7 @@
 package ru.shum;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -23,8 +24,13 @@ public class Main {
     // Повышение зарплаты всем сотрудникам, кроме руководителей
     Manager.increaseSalary(employees.toArray(new Employee[0]), 1000);
     System.out.println("\nAfter salary increase:");
-    for (Employee employee : employees
-    ) {
+    for (Employee employee : employees) {
+      System.out.println(employee);
+    }
+    // Сортировка списка сотрудников по зарплате
+    Collections.sort(employees, new SalaryComparator());
+    System.out.println("\nAfter sorting by salary:");
+    for (Employee employee : employees) {
       System.out.println(employee);
     }
   }
