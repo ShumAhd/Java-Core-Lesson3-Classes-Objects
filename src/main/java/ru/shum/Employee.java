@@ -7,6 +7,7 @@ public class Employee {
 
   private String name;
   private double salary;
+  private int age;
 
   /**
    * Конструктор сотрудника.
@@ -14,9 +15,10 @@ public class Employee {
    * @param name   Имя сотрудника
    * @param salary Зарплата сотрудника
    */
-  public Employee(String name, double salary) {
+  public Employee(String name, double salary, int age) {
     this.name = name;
     this.salary = salary;
+    this.age = age;
   }
 
   /**
@@ -35,6 +37,14 @@ public class Employee {
    */
   public double getSalary() {
     return salary;
+  }
+  /**
+   * Получить возраст сотрудника.
+   *
+   * @return возраст сотрудника
+   */
+  public double getAge() {
+    return age;
   }
 
   /**
@@ -56,6 +66,6 @@ public class Employee {
     return "Employee{" +
         "name='" + name + '\'' +
         ", salary=" + salary +
-        '}';
+        "age =" + age +'}';
   }
 }

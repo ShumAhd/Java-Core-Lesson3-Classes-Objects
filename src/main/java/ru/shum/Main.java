@@ -12,9 +12,9 @@ public class Main {
   public static void main(String[] args) {
 // Создание списка сотрудников
     List<Employee> employees = new ArrayList<>();
-    employees.add(new Employee("John Doe", 3000));
-    employees.add(new Manager("Jane Smith", 5000));
-    employees.add(new Employee("Mark Johnson", 4000));
+    employees.add(new Employee("John Doe", 3000, 35));
+    employees.add(new Manager("Jane Smith", 5000, 40));
+    employees.add(new Employee("Mark Johnson", 4000, 45));
 
     System.out.println("Before salary increase:");
     for (Employee employee : employees
@@ -30,6 +30,13 @@ public class Main {
     // Сортировка списка сотрудников по зарплате
     Collections.sort(employees, new SalaryComparator());
     System.out.println("\nAfter sorting by salary:");
+    for (Employee employee : employees) {
+      System.out.println(employee);
+    }
+    // Сортировка списка сотрудников по возрасту
+    Collections.sort(employees, new AgeComparator());
+
+    System.out.println("\nAfter sorting by age:");
     for (Employee employee : employees) {
       System.out.println(employee);
     }

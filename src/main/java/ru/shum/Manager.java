@@ -10,9 +10,10 @@ public class Manager extends Employee {
    *
    * @param name   Имя руководителя
    * @param salary Зарплата руководителя
+   * @param i
    */
-  public Manager(String name, double salary) {
-    super(name, salary);
+  public Manager(String name, double salary, int age) {
+    super(name, salary, age);
   }
   /**
    * Статический метод для повышения зарплаты сотрудников, кроме руководителей.
