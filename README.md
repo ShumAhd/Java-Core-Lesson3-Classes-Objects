@@ -5,6 +5,7 @@
 
 2.(*) Сделать компараторы для Сотрудников на основе ЗП и Возраста
 
+[Код программы](https://github.com/ShumAhd/Java-Core-Lesson3-Classes-Objects/tree/main/src/main/java/ru/shum) 
 **Результат:**
 ```
 Before salary increase:
