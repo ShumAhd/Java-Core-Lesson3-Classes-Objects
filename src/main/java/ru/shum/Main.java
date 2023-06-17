@@ -20,5 +20,12 @@ public class Main {
     ) {
       System.out.println(employee);
     }
+    // Повышение зарплаты всем сотрудникам, кроме руководителей
+    Manager.increaseSalary(employees.toArray(new Employee[0]), 1000);
+    System.out.println("\nAfter salary increase:");
+    for (Employee employee : employees
+    ) {
+      System.out.println(employee);
+    }
   }
 }
